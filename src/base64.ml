@@ -57,7 +57,7 @@ let make_alphabet alphabet =
 
 let length_alphabet { emap; _ } = Array.length emap
 
-let alphabet { emap; _ } = emap
+let alphabet { emap; _ } = Array.copy emap
 
 let default_alphabet =
   make_alphabet
